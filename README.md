@@ -34,7 +34,7 @@ results will be printed and returned as a list, in the format:
 ```
 Sample1/2 are just the names of the samples taken from the VCF headers. If a VCF file has more than one sample in it, only the 1st sample will be used. 
 
-Similarity is the main result. Any value over 0.8 suggests the same donor (see 'N_Loc' below), with a value of 1 indicating a completly identical dataset.
+Similarity is the main result. Any value over 0.8 using 'method'=2/"ExpHet" suggests the same donor (see 'N_Loc' below), with a value of 1 indicating a completly identical dataset.
 
 Pooled diversity is the total ammount of genotype diversity when all loci between both samples is pooled. This is used as a baseline of diveristy for the method, but can be used as a QC metric. If your samples have 0 pooled diversity it can indicate some data quality issues (even identical samples will have some pooled diversity).
 
