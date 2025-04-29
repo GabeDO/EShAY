@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["EShAY*"]
+
+[project]
+name = "EShAY"
+version = "1.0.4"
+authors = [
+  { name="Dr Gabe O'Reilly", email="g.oreilly@garvan.org.au" },
+]
+description = "A package to look at similarity between two genetic datasets. Useful for finding duplicate tissue donors betwen studies."
+readme = "README.md"
+requires-python = ">=3"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/GabeDO/SimilarityPythonPackage"
